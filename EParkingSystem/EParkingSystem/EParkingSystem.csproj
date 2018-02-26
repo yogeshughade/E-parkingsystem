@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{578B1771-0BC0-424B-88B9-1C41B1299431}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EParkingSystem</RootNamespace>
+    <AssemblyName>EParkingSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsProgram.cs" />
+    <Compile Include="ffrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ffrmLogin.Designer.cs">
+      <DependentUpon>ffrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddFees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddFees.Designer.cs">
+      <DependentUpon>frmAddFees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeleteAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeleteAll.Designer.cs">
+      <DependentUpon>frmDeleteAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPark.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPark.Designer.cs">
+      <DependentUpon>frmPark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRelease.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelease.Designer.cs">
+      <DependentUpon>frmRelease.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowPark.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowPark.Designer.cs">
+      <DependentUpon>frmShowPark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowRealease.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowRealease.Designer.cs">
+      <DependentUpon>frmShowRealease.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ffrmLogin.resx">
+      <DependentUpon>ffrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddFees.resx">
+      <DependentUpon>frmAddFees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeleteAll.resx">
+      <DependentUpon>frmDeleteAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPark.resx">
+      <DependentUpon>frmPark.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelease.resx">
+      <DependentUpon>frmRelease.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowPark.resx">
+      <DependentUpon>frmShowPark.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowRealease.resx">
+      <DependentUpon>frmShowRealease.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RICHMOND_DOCKS__0067a_frl669x415.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hotel-Parking.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\45.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6357612195503131432129342794_parking.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\121.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hotel-Parking1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q-Park Parking Deck.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parking sign blue crop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hacking-intimation-and-automatic-vehicle-parking-ece-student-project.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RICHMOND_DOCKS__0067a_frl669x4151.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q-Park Parking Deck1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parking-lot1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\02marsmsps6_rtf_SA_1774992e.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\122.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\481.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6357612195503131432129342794_parking1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hacking-intimation-and-automatic-vehicle-parking-ece-student-project1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hacking-intimation-and-automatic-vehicle-parking-ece-student-project2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vfg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\179660.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reliable-Parking-for-Adelaide-Airport.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reliable-Parking-for-Adelaide-Airport1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Volvo-Self-parking-car-5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hotel-Parking2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gh1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gh2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gh3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\482.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parking-lot11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parking-lot12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\123.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\124.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RICHMOND_DOCKS__0067a_frl669x4152.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
